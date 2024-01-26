@@ -1,0 +1,40 @@
+version: '3.3'
+
+services:
+  mssql:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Na!12345678"
+    ports:
+      - 1433:1433
+  mssql2:
+    container_name: sql-server2
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Na!12345678"
+    ports:
+      - 14331:1433
+  mssql3:
+    container_name: sql-server3
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Na!12345678"
+    ports:
+      - 14332:1433
+  mssql4:
+    container_name: sql-server4
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Na!12345678"
+    ports:
+      - 14333:1433
+  
